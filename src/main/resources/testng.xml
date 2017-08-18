@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FirstTest" verbose="1" >
+        <test name="FirstTest">
+        <classes>
+            <class name="com.first.test.FirstTest"/>
+        </classes>
+        </test>
+    <test name="SecondTest">
+        <classes>
+            <class name="com.first.test.SecondTest"/>
+        </classes>
+
+    </test>
+</suite>
