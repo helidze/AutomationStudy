@@ -15,7 +15,7 @@ public class LoginTest extends BaseTest{
         LoginPage loginPage = new LoginPage(webDriver);
         MyAccountPage myAccountPage = new MyAccountPage(webDriver);
 
-        String expectedPageTitle = "ksapi - WorldAPP";
+        String expectedPageTitle = "WorldAPP";
         String correctProfileName = "george.helidze@worldapp.com";
 
         // Open ksapi login page --- http://app-ksapi.ssstest.com

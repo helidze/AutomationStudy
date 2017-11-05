@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePageObject<LoginPage> {
-    private  static final String URL = "https://app-ksapi.ssstest.com";
+    private  static final String URL = "https://app.keysurvey.com";
 
     private By emailField = By.xpath("//input[@id='login']");
     private By passwordField = By.xpath("//input[@id='password']");
