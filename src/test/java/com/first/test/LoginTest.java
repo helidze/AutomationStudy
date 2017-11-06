@@ -25,7 +25,12 @@ public class LoginTest extends BaseTest{
         //Push sign in button
         loginPage.pushSignInButton();
 
-        webDriver.switchTo().alert().accept();
+       if (webDriver.switchTo().alert() != null){
+           webDriver.switchTo().alert().accept();
+       }
+       else {
+           System.out.println("alert doesn't displayed");
+       }
 
         myAccountPage.clickMyAccountButton();
         // Verify that button login displayed
