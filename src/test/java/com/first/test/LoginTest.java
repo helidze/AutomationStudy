@@ -41,6 +41,7 @@ public class LoginTest extends BaseTest{
         Assert.assertTrue(expectedPageTitle.equals(actualTitle),
                 "Page title doesn't as expected: " + expectedPageTitle + "\nActual: " + actualTitle);
         Assert.assertTrue(myAccountPage.isCorrectProfileLoaded(correctProfileName),"Profile name is not as expected: ");
+        myAccountPage.clickLogout();
 
     }
     @Test

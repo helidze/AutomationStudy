@@ -9,6 +9,7 @@ public class MyAccountPage extends BasePageObject<MyAccountPage> {
     private By myAccountButton = By.xpath(".//*[@id='topNav']/ul/li[3]/a");
     private By editAccountButton = By.xpath(".//*[@id='editProfile']");
     private By profileContactNameText = By.xpath("//*[@id=\"mainIncludeContainer\"]/table/tbody/tr/td[1]/div[1]/table/tbody/tr[1]/td");
+    private By logoutButton = By.linkText("Logout");
 
     public MyAccountPage(WebDriver driver) {
         super(driver);
@@ -27,5 +28,8 @@ public class MyAccountPage extends BasePageObject<MyAccountPage> {
             return true;
         }
         return false;
+    }
+    public void clickLogout(){
+        click(logoutButton);
     }
 }
